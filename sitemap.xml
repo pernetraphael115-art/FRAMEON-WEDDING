@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:video="http://www.google.com/schemas/sitemap-video/1.1"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  <url>
+    <loc>https://www.frameon-wedding.com/</loc>
+    <lastmod>2026-11-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://www.frameon-wedding.com/assets/images/005e99_ca44a1a59c874211892f060cd2ab42d6~mv2.jpg</image:loc>
+      <image:title>FrameOn Wedding — Vidéaste et photographe de mariage à Paris</image:title>
+    </image:image>
+    <video:video>
+      <video:thumbnail_loc>https://www.frameon-wedding.com/assets/images/005e99_07b7fe7093374629b337e37306b9dfd8~mv2.jpg</video:thumbnail_loc>
+      <video:title>Film de mariage Olivia &amp; Olivier — Château de Serans | FrameOn Wedding</video:title>
+      <video:description>Film Highlight cinématique et moderne réalisé par FrameOn Wedding au Château de Serans près de Paris.</video:description>
+      <video:content_loc>https://www.frameon-wedding.com/assets/videos/olivia-olivier.mp4</video:content_loc>
+    </video:video>
+    <video:video>
+      <video:thumbnail_loc>https://www.frameon-wedding.com/assets/images/005e99_6197520007df41b6a7fc455169cf2100~mv2.png</video:thumbnail_loc>
+      <video:title>Film de mariage Jasmine &amp; Enzo — Domaine de la Trésorière | FrameOn Wedding</video:title>
+      <video:description>Film Highlight dynamique et émotionnel réalisé par FrameOn Wedding au Domaine de la Trésorière.</video:description>
+      <video:content_loc>https://www.frameon-wedding.com/assets/videos/jasmine-enzo.mp4</video:content_loc>
+    </video:video>
+  </url>
+</urlset>
