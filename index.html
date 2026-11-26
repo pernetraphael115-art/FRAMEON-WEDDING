@@ -157,7 +157,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500&family=Fraunces:ital,opsz,wght@0,9..144,300..400;1,9..144,300..400&family=Raleway:wght@300;400;500;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css?v=20261126">
+  <link rel="stylesheet" href="styles.css?v=20261126-2">
 </head>
 <body>
   <a href="#main-content" class="skip-link">Aller au contenu principal</a>
@@ -222,31 +222,40 @@
 
       <div class="hero-triptych">
         <div class="hero-triptych-item">
-          <img
-            src="assets/images/005e99_ca44a1a59c874211892f060cd2ab42d6~mv2.jpg"
-            alt="Échange des alliances lors du mariage"
-            width="1920"
-            height="981"
-            fetchpriority="high"
-          >
+          <picture>
+            <source type="image/webp" srcset="assets/images/opt/hero/005e99_ca44a1a59c874211892f060cd2ab42d6~mv2-800w.webp 800w, assets/images/opt/hero/005e99_ca44a1a59c874211892f060cd2ab42d6~mv2-1440w.webp 1440w" sizes="(max-width: 760px) 84vw, 31vw">
+            <img
+              src="assets/images/005e99_ca44a1a59c874211892f060cd2ab42d6~mv2.jpg"
+              alt="Échange des alliances lors du mariage"
+              width="1600"
+              height="818"
+              fetchpriority="high"
+            >
+          </picture>
         </div>
         <div class="hero-triptych-item">
-          <img
-            src="assets/images/005e99_7cff5d93fbb040688cbca2fd4ad12f50~mv2.jpg"
-            alt="Couple de mariés allongés dans un champ de blé"
-            width="1294"
-            height="677"
-            fetchpriority="high"
-          >
+          <picture>
+            <source type="image/webp" srcset="assets/images/opt/hero/005e99_7cff5d93fbb040688cbca2fd4ad12f50~mv2-800w.webp 800w, assets/images/opt/hero/005e99_7cff5d93fbb040688cbca2fd4ad12f50~mv2-1440w.webp 1440w" sizes="(max-width: 760px) 84vw, 31vw">
+            <img
+              src="assets/images/005e99_7cff5d93fbb040688cbca2fd4ad12f50~mv2.jpg"
+              alt="Couple de mariés allongés dans un champ de blé"
+              width="1600"
+              height="837"
+              decoding="async"
+            >
+          </picture>
         </div>
         <div class="hero-triptych-item">
-          <img
-            src="assets/images/005e99_aa93a611b96e4fffb37771f3d162f006~mv2.jpg"
-            alt="Baiser des mariés sous l'arche fleurie"
-            width="1920"
-            height="992"
-            fetchpriority="high"
-          >
+          <picture>
+            <source type="image/webp" srcset="assets/images/opt/hero/005e99_aa93a611b96e4fffb37771f3d162f006~mv2-800w.webp 800w, assets/images/opt/hero/005e99_aa93a611b96e4fffb37771f3d162f006~mv2-1440w.webp 1440w" sizes="(max-width: 760px) 84vw, 31vw">
+            <img
+              src="assets/images/005e99_aa93a611b96e4fffb37771f3d162f006~mv2.jpg"
+              alt="Baiser des mariés sous l'arche fleurie"
+              width="1600"
+              height="827"
+              fetchpriority="low" decoding="async"
+            >
+          </picture>
         </div>
       </div>
 
@@ -272,7 +281,7 @@
                 preload="metadata"
                 width="1920"
                 height="1080"
-                poster="assets/images/005e99_07b7fe7093374629b337e37306b9dfd8~mv2.jpg"
+                poster="assets/images/opt/poster/005e99_07b7fe7093374629b337e37306b9dfd8~mv2-1280w.jpg"
               >
                 <source src="https://pub-b8aff17017254f26aff6cb82d1496a6c.r2.dev/olivia-olivier.mp4" type="video/mp4">
               </video>
@@ -291,7 +300,7 @@
                 preload="metadata"
                 width="1920"
                 height="1080"
-                poster="assets/images/005e99_6197520007df41b6a7fc455169cf2100~mv2.png"
+                poster="assets/images/opt/poster/005e99_6197520007df41b6a7fc455169cf2100~mv2-1280w.jpg"
               >
                 <source src="https://pub-b8aff17017254f26aff6cb82d1496a6c.r2.dev/jasmine-enzo.mp4" type="video/mp4">
               </video>
@@ -336,79 +345,148 @@
       <div class="marquee-gallery" id="marquee-gallery">
         <div class="marquee-row" data-direction="left">
           <div class="marquee-track">
-            <button type="button" class="gallery-item" data-index="0" data-full="assets/images/005e99_08778ac9d4f945a3bbc52eda2e57dca4~mv2.jpg">
-              <img src="assets/images/005e99_08778ac9d4f945a3bbc52eda2e57dca4~mv2.jpg" alt="Instant de mariage capturé sur le vif" loading="lazy" width="1920" height="1080">
+            <button type="button" class="gallery-item" data-index="0" data-full="assets/images/opt/full/005e99_08778ac9d4f945a3bbc52eda2e57dca4~mv2-1600w.webp">
+              <picture>
+                <source type="image/webp" srcset="assets/images/opt/thumb/005e99_08778ac9d4f945a3bbc52eda2e57dca4~mv2-720w.webp">
+                <img src="assets/images/005e99_08778ac9d4f945a3bbc52eda2e57dca4~mv2.jpg" alt="Instant de mariage capturé sur le vif" loading="lazy" decoding="async" width="720" height="405">
+              </picture>
             </button>
-            <button type="button" class="gallery-item" data-index="1" data-full="assets/images/005e99_14f2b2e5b84c46f18a83eacc422a2e55~mv2.jpg">
-              <img src="assets/images/005e99_14f2b2e5b84c46f18a83eacc422a2e55~mv2.jpg" alt="Complicité des mariés en lumière naturelle" loading="lazy" width="1920" height="1047">
+            <button type="button" class="gallery-item" data-index="1" data-full="assets/images/opt/full/005e99_14f2b2e5b84c46f18a83eacc422a2e55~mv2-1600w.webp">
+              <picture>
+                <source type="image/webp" srcset="assets/images/opt/thumb/005e99_14f2b2e5b84c46f18a83eacc422a2e55~mv2-720w.webp">
+                <img src="assets/images/005e99_14f2b2e5b84c46f18a83eacc422a2e55~mv2.jpg" alt="Complicité des mariés en lumière naturelle" loading="lazy" decoding="async" width="720" height="393">
+              </picture>
             </button>
-            <button type="button" class="gallery-item" data-index="2" data-full="assets/images/005e99_256548829fdf4d68bebe7141817d6f8b~mv2.jpg">
-              <img src="assets/images/005e99_256548829fdf4d68bebe7141817d6f8b~mv2.jpg" alt="Photographie de mariage moderne et spontanée" loading="lazy" width="1920" height="1025">
+            <button type="button" class="gallery-item" data-index="2" data-full="assets/images/opt/full/005e99_256548829fdf4d68bebe7141817d6f8b~mv2-1600w.webp">
+              <picture>
+                <source type="image/webp" srcset="assets/images/opt/thumb/005e99_256548829fdf4d68bebe7141817d6f8b~mv2-720w.webp">
+                <img src="assets/images/005e99_256548829fdf4d68bebe7141817d6f8b~mv2.jpg" alt="Photographie de mariage moderne et spontanée" loading="lazy" decoding="async" width="720" height="384">
+              </picture>
             </button>
-            <button type="button" class="gallery-item" data-index="3" data-full="assets/images/005e99_29a854b163eb44549f88f130f8fde106~mv2.jpg">
-              <img src="assets/images/005e99_29a854b163eb44549f88f130f8fde106~mv2.jpg" alt="Émotion lors de la cérémonie de mariage" loading="lazy" width="1920" height="1080">
+            <button type="button" class="gallery-item" data-index="3" data-full="assets/images/opt/full/005e99_29a854b163eb44549f88f130f8fde106~mv2-1600w.webp">
+              <picture>
+                <source type="image/webp" srcset="assets/images/opt/thumb/005e99_29a854b163eb44549f88f130f8fde106~mv2-720w.webp">
+                <img src="assets/images/005e99_29a854b163eb44549f88f130f8fde106~mv2.jpg" alt="Émotion lors de la cérémonie de mariage" loading="lazy" decoding="async" width="720" height="405">
+              </picture>
             </button>
-            <button type="button" class="gallery-item" data-index="4" data-full="assets/images/005e99_3276a9912b7b48c88c04cd87b577c6b2~mv2.jpg">
-              <img src="assets/images/005e99_3276a9912b7b48c88c04cd87b577c6b2~mv2.jpg" alt="Couple de mariés — cadrage cinématique" loading="lazy" width="1920" height="1080">
+            <button type="button" class="gallery-item" data-index="4" data-full="assets/images/opt/full/005e99_3276a9912b7b48c88c04cd87b577c6b2~mv2-1600w.webp">
+              <picture>
+                <source type="image/webp" srcset="assets/images/opt/thumb/005e99_3276a9912b7b48c88c04cd87b577c6b2~mv2-720w.webp">
+                <img src="assets/images/005e99_3276a9912b7b48c88c04cd87b577c6b2~mv2.jpg" alt="Couple de mariés — cadrage cinématique" loading="lazy" decoding="async" width="720" height="405">
+              </picture>
             </button>
-            <button type="button" class="gallery-item" data-index="5" data-full="assets/images/005e99_42b6e53364d44f2dabfc0ce6e1ec3cc8~mv2.jpg">
-              <img src="assets/images/005e99_42b6e53364d44f2dabfc0ce6e1ec3cc8~mv2.jpg" alt="Séance photo de couple en extérieur" loading="lazy" width="1257" height="718">
+            <button type="button" class="gallery-item" data-index="5" data-full="assets/images/opt/full/005e99_42b6e53364d44f2dabfc0ce6e1ec3cc8~mv2-1600w.webp">
+              <picture>
+                <source type="image/webp" srcset="assets/images/opt/thumb/005e99_42b6e53364d44f2dabfc0ce6e1ec3cc8~mv2-720w.webp">
+                <img src="assets/images/005e99_42b6e53364d44f2dabfc0ce6e1ec3cc8~mv2.jpg" alt="Séance photo de couple en extérieur" loading="lazy" decoding="async" width="720" height="411">
+              </picture>
             </button>
-            <button type="button" class="gallery-item" data-index="6" data-full="assets/images/005e99_505708c718854dbcb1b7fbd137cb4f7d~mv2.jpg">
-              <img src="assets/images/005e99_505708c718854dbcb1b7fbd137cb4f7d~mv2.jpg" alt="Détails et atmosphère du jour J" loading="lazy" width="1275" height="728">
+            <button type="button" class="gallery-item" data-index="6" data-full="assets/images/opt/full/005e99_505708c718854dbcb1b7fbd137cb4f7d~mv2-1600w.webp">
+              <picture>
+                <source type="image/webp" srcset="assets/images/opt/thumb/005e99_505708c718854dbcb1b7fbd137cb4f7d~mv2-720w.webp">
+                <img src="assets/images/005e99_505708c718854dbcb1b7fbd137cb4f7d~mv2.jpg" alt="Détails et atmosphère du jour J" loading="lazy" decoding="async" width="720" height="411">
+              </picture>
             </button>
-            <button type="button" class="gallery-item" data-index="7" data-full="assets/images/005e99_5ce8a52aa16f492689fe83790933a314~mv2.jpg">
-              <img src="assets/images/005e99_5ce8a52aa16f492689fe83790933a314~mv2.jpg" alt="Moment festif et dynamique de mariage" loading="lazy" width="1920" height="1080">
+            <button type="button" class="gallery-item" data-index="7" data-full="assets/images/opt/full/005e99_5ce8a52aa16f492689fe83790933a314~mv2-1600w.webp">
+              <picture>
+                <source type="image/webp" srcset="assets/images/opt/thumb/005e99_5ce8a52aa16f492689fe83790933a314~mv2-720w.webp">
+                <img src="assets/images/005e99_5ce8a52aa16f492689fe83790933a314~mv2.jpg" alt="Moment festif et dynamique de mariage" loading="lazy" decoding="async" width="720" height="405">
+              </picture>
             </button>
-            <button type="button" class="gallery-item" data-index="8" data-full="assets/images/005e99_6d864c86879f45d9a4fa0b24b77d5f4a~mv2.jpg">
-              <img src="assets/images/005e99_6d864c86879f45d9a4fa0b24b77d5f4a~mv2.jpg" alt="Portrait intemporel de couple" loading="lazy" width="1920" height="1072">
+            <button type="button" class="gallery-item" data-index="8" data-full="assets/images/opt/full/005e99_6d864c86879f45d9a4fa0b24b77d5f4a~mv2-1600w.webp">
+              <picture>
+                <source type="image/webp" srcset="assets/images/opt/thumb/005e99_6d864c86879f45d9a4fa0b24b77d5f4a~mv2-720w.webp">
+                <img src="assets/images/005e99_6d864c86879f45d9a4fa0b24b77d5f4a~mv2.jpg" alt="Portrait intemporel de couple" loading="lazy" decoding="async" width="720" height="402">
+              </picture>
             </button>
-            <button type="button" class="gallery-item" data-index="9" data-full="assets/images/005e99_7b4924f573c24936af77a858a0dc0bfd~mv2.jpg">
-              <img src="assets/images/005e99_7b4924f573c24936af77a858a0dc0bfd~mv2.jpg" alt="Préparatifs et émotion avant la cérémonie" loading="lazy" width="1920" height="981">
+            <button type="button" class="gallery-item" data-index="9" data-full="assets/images/opt/full/005e99_7b4924f573c24936af77a858a0dc0bfd~mv2-1600w.webp">
+              <picture>
+                <source type="image/webp" srcset="assets/images/opt/thumb/005e99_7b4924f573c24936af77a858a0dc0bfd~mv2-720w.webp">
+                <img src="assets/images/005e99_7b4924f573c24936af77a858a0dc0bfd~mv2.jpg" alt="Préparatifs et émotion avant la cérémonie" loading="lazy" decoding="async" width="720" height="368">
+              </picture>
             </button>
-            <button type="button" class="gallery-item" data-index="10" data-full="assets/images/005e99_81b8839038e647c6958c077aa5613b3b~mv2.jpg">
-              <img src="assets/images/005e99_81b8839038e647c6958c077aa5613b3b~mv2.jpg" alt="Couple en mouvement — photographie spontanée" loading="lazy" width="1920" height="1059">
+            <button type="button" class="gallery-item" data-index="10" data-full="assets/images/opt/full/005e99_81b8839038e647c6958c077aa5613b3b~mv2-1600w.webp">
+              <picture>
+                <source type="image/webp" srcset="assets/images/opt/thumb/005e99_81b8839038e647c6958c077aa5613b3b~mv2-720w.webp">
+                <img src="assets/images/005e99_81b8839038e647c6958c077aa5613b3b~mv2.jpg" alt="Couple en mouvement — photographie spontanée" loading="lazy" decoding="async" width="720" height="397">
+              </picture>
             </button>
-            <button type="button" class="gallery-item" data-index="11" data-full="assets/images/005e99_8449b0e4dc0b4fa78cd5dd172542695d~mv2.jpg">
-              <img src="assets/images/005e99_8449b0e4dc0b4fa78cd5dd172542695d~mv2.jpg" alt="Scène de réception et joie partagée" loading="lazy" width="1920" height="1080">
+            <button type="button" class="gallery-item" data-index="11" data-full="assets/images/opt/full/005e99_8449b0e4dc0b4fa78cd5dd172542695d~mv2-1600w.webp">
+              <picture>
+                <source type="image/webp" srcset="assets/images/opt/thumb/005e99_8449b0e4dc0b4fa78cd5dd172542695d~mv2-720w.webp">
+                <img src="assets/images/005e99_8449b0e4dc0b4fa78cd5dd172542695d~mv2.jpg" alt="Scène de réception et joie partagée" loading="lazy" decoding="async" width="720" height="405">
+              </picture>
             </button>
           </div>
         </div>
 
         <div class="marquee-row" data-direction="right">
           <div class="marquee-track">
-            <button type="button" class="gallery-item" data-index="12" data-full="assets/images/005e99_865d990e776e464c84f7d53354f5d668~mv2.jpg">
-              <img src="assets/images/005e99_865d990e776e464c84f7d53354f5d668~mv2.jpg" alt="Couple de mariés dans une lumière dorée" loading="lazy" width="1920" height="970">
+            <button type="button" class="gallery-item" data-index="12" data-full="assets/images/opt/full/005e99_865d990e776e464c84f7d53354f5d668~mv2-1600w.webp">
+              <picture>
+                <source type="image/webp" srcset="assets/images/opt/thumb/005e99_865d990e776e464c84f7d53354f5d668~mv2-720w.webp">
+                <img src="assets/images/005e99_865d990e776e464c84f7d53354f5d668~mv2.jpg" alt="Couple de mariés dans une lumière dorée" loading="lazy" decoding="async" width="720" height="364">
+              </picture>
             </button>
-            <button type="button" class="gallery-item" data-index="13" data-full="assets/images/005e99_9addf4d75e9e43a685af9bb706172cdb~mv2.jpg">
-              <img src="assets/images/005e99_9addf4d75e9e43a685af9bb706172cdb~mv2.jpg" alt="Photographie grand angle de mariage" loading="lazy" width="1920" height="1080">
+            <button type="button" class="gallery-item" data-index="13" data-full="assets/images/opt/full/005e99_9addf4d75e9e43a685af9bb706172cdb~mv2-1600w.webp">
+              <picture>
+                <source type="image/webp" srcset="assets/images/opt/thumb/005e99_9addf4d75e9e43a685af9bb706172cdb~mv2-720w.webp">
+                <img src="assets/images/005e99_9addf4d75e9e43a685af9bb706172cdb~mv2.jpg" alt="Photographie grand angle de mariage" loading="lazy" decoding="async" width="720" height="405">
+              </picture>
             </button>
-            <button type="button" class="gallery-item" data-index="14" data-full="assets/images/005e99_9bc4cc255a7e452e9810b70710eebcc4~mv2.jpg">
-              <img src="assets/images/005e99_9bc4cc255a7e452e9810b70710eebcc4~mv2.jpg" alt="Instants volés entre les mariés" loading="lazy" width="1920" height="1026">
+            <button type="button" class="gallery-item" data-index="14" data-full="assets/images/opt/full/005e99_9bc4cc255a7e452e9810b70710eebcc4~mv2-1600w.webp">
+              <picture>
+                <source type="image/webp" srcset="assets/images/opt/thumb/005e99_9bc4cc255a7e452e9810b70710eebcc4~mv2-720w.webp">
+                <img src="assets/images/005e99_9bc4cc255a7e452e9810b70710eebcc4~mv2.jpg" alt="Instants volés entre les mariés" loading="lazy" decoding="async" width="720" height="385">
+              </picture>
             </button>
-            <button type="button" class="gallery-item" data-index="15" data-full="assets/images/005e99_a1437dcc82e64eabb82f9f5fe6ef8744~mv2.jpg">
-              <img src="assets/images/005e99_a1437dcc82e64eabb82f9f5fe6ef8744~mv2.jpg" alt="Cérémonie et architecture du domaine" loading="lazy" width="1920" height="1080">
+            <button type="button" class="gallery-item" data-index="15" data-full="assets/images/opt/full/005e99_a1437dcc82e64eabb82f9f5fe6ef8744~mv2-1600w.webp">
+              <picture>
+                <source type="image/webp" srcset="assets/images/opt/thumb/005e99_a1437dcc82e64eabb82f9f5fe6ef8744~mv2-720w.webp">
+                <img src="assets/images/005e99_a1437dcc82e64eabb82f9f5fe6ef8744~mv2.jpg" alt="Cérémonie et architecture du domaine" loading="lazy" decoding="async" width="720" height="405">
+              </picture>
             </button>
-            <button type="button" class="gallery-item" data-index="16" data-full="assets/images/005e99_a880e51931eb49adb9cde75a4da46ef5~mv2.jpg">
-              <img src="assets/images/005e99_a880e51931eb49adb9cde75a4da46ef5~mv2.jpg" alt="Regard complice lors du shooting de couple" loading="lazy" width="1920" height="1025">
+            <button type="button" class="gallery-item" data-index="16" data-full="assets/images/opt/full/005e99_a880e51931eb49adb9cde75a4da46ef5~mv2-1600w.webp">
+              <picture>
+                <source type="image/webp" srcset="assets/images/opt/thumb/005e99_a880e51931eb49adb9cde75a4da46ef5~mv2-720w.webp">
+                <img src="assets/images/005e99_a880e51931eb49adb9cde75a4da46ef5~mv2.jpg" alt="Regard complice lors du shooting de couple" loading="lazy" decoding="async" width="720" height="384">
+              </picture>
             </button>
-            <button type="button" class="gallery-item" data-index="17" data-full="assets/images/005e99_aca6e5b98c574bbcbe6e5fd9b5adf904~mv2.jpg">
-              <img src="assets/images/005e99_aca6e5b98c574bbcbe6e5fd9b5adf904~mv2.jpg" alt="Photographie de mariage éditoriale" loading="lazy" width="1920" height="1072">
+            <button type="button" class="gallery-item" data-index="17" data-full="assets/images/opt/full/005e99_aca6e5b98c574bbcbe6e5fd9b5adf904~mv2-1600w.webp">
+              <picture>
+                <source type="image/webp" srcset="assets/images/opt/thumb/005e99_aca6e5b98c574bbcbe6e5fd9b5adf904~mv2-720w.webp">
+                <img src="assets/images/005e99_aca6e5b98c574bbcbe6e5fd9b5adf904~mv2.jpg" alt="Photographie de mariage éditoriale" loading="lazy" decoding="async" width="720" height="402">
+              </picture>
             </button>
-            <button type="button" class="gallery-item" data-index="18" data-full="assets/images/005e99_ba9d4b07da624e97b46f22541d1df556~mv2.jpg">
-              <img src="assets/images/005e99_ba9d4b07da624e97b46f22541d1df556~mv2.jpg" alt="Ambiance soirée et célébration" loading="lazy" width="1920" height="1080">
+            <button type="button" class="gallery-item" data-index="18" data-full="assets/images/opt/full/005e99_ba9d4b07da624e97b46f22541d1df556~mv2-1600w.webp">
+              <picture>
+                <source type="image/webp" srcset="assets/images/opt/thumb/005e99_ba9d4b07da624e97b46f22541d1df556~mv2-720w.webp">
+                <img src="assets/images/005e99_ba9d4b07da624e97b46f22541d1df556~mv2.jpg" alt="Ambiance soirée et célébration" loading="lazy" decoding="async" width="720" height="405">
+              </picture>
             </button>
-            <button type="button" class="gallery-item" data-index="19" data-full="assets/images/005e99_bc008e41754940e0a9378d98dee01f78~mv2.jpg">
-              <img src="assets/images/005e99_bc008e41754940e0a9378d98dee01f78~mv2.jpg" alt="Portrait naturel de mariage" loading="lazy" width="1195" height="738">
+            <button type="button" class="gallery-item" data-index="19" data-full="assets/images/opt/full/005e99_bc008e41754940e0a9378d98dee01f78~mv2-1600w.webp">
+              <picture>
+                <source type="image/webp" srcset="assets/images/opt/thumb/005e99_bc008e41754940e0a9378d98dee01f78~mv2-720w.webp">
+                <img src="assets/images/005e99_bc008e41754940e0a9378d98dee01f78~mv2.jpg" alt="Portrait naturel de mariage" loading="lazy" decoding="async" width="720" height="444">
+              </picture>
             </button>
-            <button type="button" class="gallery-item" data-index="20" data-full="assets/images/005e99_e61af5304ffb4d2ab98e75b5f891e0be~mv2.jpg">
-              <img src="assets/images/005e99_e61af5304ffb4d2ab98e75b5f891e0be~mv2.jpg" alt="Instant suspendu en fin de journée" loading="lazy" width="1920" height="1071">
+            <button type="button" class="gallery-item" data-index="20" data-full="assets/images/opt/full/005e99_e61af5304ffb4d2ab98e75b5f891e0be~mv2-1600w.webp">
+              <picture>
+                <source type="image/webp" srcset="assets/images/opt/thumb/005e99_e61af5304ffb4d2ab98e75b5f891e0be~mv2-720w.webp">
+                <img src="assets/images/005e99_e61af5304ffb4d2ab98e75b5f891e0be~mv2.jpg" alt="Instant suspendu en fin de journée" loading="lazy" decoding="async" width="720" height="402">
+              </picture>
             </button>
-            <button type="button" class="gallery-item" data-index="21" data-full="assets/images/005e99_ef3ffc8517b64859affdc3fd042bdfdc~mv2.jpg">
-              <img src="assets/images/005e99_ef3ffc8517b64859affdc3fd042bdfdc~mv2.jpg" alt="Éclat de rire des mariés" loading="lazy" width="1920" height="1107">
+            <button type="button" class="gallery-item" data-index="21" data-full="assets/images/opt/full/005e99_ef3ffc8517b64859affdc3fd042bdfdc~mv2-1600w.webp">
+              <picture>
+                <source type="image/webp" srcset="assets/images/opt/thumb/005e99_ef3ffc8517b64859affdc3fd042bdfdc~mv2-720w.webp">
+                <img src="assets/images/005e99_ef3ffc8517b64859affdc3fd042bdfdc~mv2.jpg" alt="Éclat de rire des mariés" loading="lazy" decoding="async" width="720" height="415">
+              </picture>
             </button>
-            <button type="button" class="gallery-item" data-index="22" data-full="assets/images/005e99_fc847c5fd61a47faa2a9e6a1ccfbd452~mv2.jpg">
-              <img src="assets/images/005e99_fc847c5fd61a47faa2a9e6a1ccfbd452~mv2.jpg" alt="Couple de mariés à Paris" loading="lazy" width="1920" height="1080">
+            <button type="button" class="gallery-item" data-index="22" data-full="assets/images/opt/full/005e99_fc847c5fd61a47faa2a9e6a1ccfbd452~mv2-1600w.webp">
+              <picture>
+                <source type="image/webp" srcset="assets/images/opt/thumb/005e99_fc847c5fd61a47faa2a9e6a1ccfbd452~mv2-720w.webp">
+                <img src="assets/images/005e99_fc847c5fd61a47faa2a9e6a1ccfbd452~mv2.jpg" alt="Couple de mariés à Paris" loading="lazy" decoding="async" width="720" height="405">
+              </picture>
             </button>
           </div>
         </div>
@@ -432,7 +510,10 @@
     <!-- Prestations / Tarifs (fond atmosphérique chaleureux) -->
     <section id="tarifs" class="section section--warm-photo">
       <div class="section-bg-media" aria-hidden="true">
-        <img src="assets/images/005e99_865d990e776e464c84f7d53354f5d668~mv2.jpg" alt="" loading="lazy" width="1920" height="970">
+        <picture>
+          <source type="image/webp" srcset="assets/images/opt/bg/005e99_865d990e776e464c84f7d53354f5d668~mv2-1200w.webp">
+          <img src="assets/images/005e99_865d990e776e464c84f7d53354f5d668~mv2.jpg" alt="" loading="lazy" decoding="async" width="1600" height="808">
+        </picture>
       </div>
       <div class="container section-content-layer">
         <div class="section-heading">
@@ -607,7 +688,10 @@
     <!-- L'Esprit FrameOn Wedding (fond éditorial chaud + galerie équipe) -->
     <section id="apropos" class="section section--editorial-warm">
       <div class="section-bg-media section-bg-media--animated" aria-hidden="true">
-        <img src="assets/images/005e99_7b4924f573c24936af77a858a0dc0bfd~mv2.jpg" alt="" loading="lazy" width="1920" height="981">
+        <picture>
+          <source type="image/webp" srcset="assets/images/opt/bg/005e99_7b4924f573c24936af77a858a0dc0bfd~mv2-1200w.webp">
+          <img src="assets/images/005e99_7b4924f573c24936af77a858a0dc0bfd~mv2.jpg" alt="" loading="lazy" decoding="async" width="1600" height="818">
+        </picture>
       </div>
       <div class="container section-content-layer">
         <div class="section-heading">
@@ -620,10 +704,16 @@
           <div class="about-portraits-wrap">
             <div class="about-portraits">
               <figure class="portrait-frame">
-                <img src="assets/images/005e99_c30aa2edeeb840b489b38808f0a70f81~mv2.jpg" alt="Vidéaste et photographe de mariage à Paris" loading="lazy" width="2000" height="3000">
+                <picture>
+                  <source type="image/webp" srcset="assets/images/opt/portrait/005e99_c30aa2edeeb840b489b38808f0a70f81~mv2-760w.webp">
+                  <img src="assets/images/005e99_c30aa2edeeb840b489b38808f0a70f81~mv2.jpg" alt="Vidéaste et photographe de mariage à Paris" loading="lazy" decoding="async" width="760" height="1140">
+                </picture>
               </figure>
               <figure class="portrait-frame portrait-frame--offset">
-                <img src="assets/images/005e99_ce24001c43024b99bbe1de0d26c68e9b~mv2.jpg" alt="Photographe et vidéaste de mariage à Paris" loading="lazy" width="2000" height="3000">
+                <picture>
+                  <source type="image/webp" srcset="assets/images/opt/portrait/005e99_ce24001c43024b99bbe1de0d26c68e9b~mv2-760w.webp">
+                  <img src="assets/images/005e99_ce24001c43024b99bbe1de0d26c68e9b~mv2.jpg" alt="Photographe et vidéaste de mariage à Paris" loading="lazy" decoding="async" width="760" height="1140">
+                </picture>
               </figure>
             </div>
             <p class="portraits-caption">Deux frères · Un même regard artistique</p>
@@ -913,6 +1003,6 @@
     </div>
   </footer>
 
-  <script src="app.js?v=20261126" defer></script>
+  <script src="app.js?v=20261126-2" defer></script>
 </body>
 </html>

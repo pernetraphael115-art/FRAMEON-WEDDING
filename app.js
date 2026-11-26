@@ -84,6 +84,34 @@
       clone.remove();
     });
 
+    // Switch horizontally-clipped marquee images from lazy to eager before the section enters view
+    const marqueeImages = Array.from(marqueeGallery.querySelectorAll('img'));
+    const warmMarqueeImages = () => {
+      marqueeImages.forEach((img) => {
+        if (img.loading === 'lazy') {
+          img.loading = 'eager';
+        }
+        if (typeof img.decode === 'function') {
+          img.decode().catch(() => {});
+        }
+      });
+    };
+
+    if ('IntersectionObserver' in window) {
+      const marqueeObserver = new IntersectionObserver(
+        (entries, observer) => {
+          if (entries.some((entry) => entry.isIntersecting)) {
+            warmMarqueeImages();
+            observer.disconnect();
+          }
+        },
+        { rootMargin: '1200px 0px' }
+      );
+      marqueeObserver.observe(marqueeGallery);
+    } else {
+      warmMarqueeImages();
+    }
+
     marqueeToggle?.addEventListener('click', () => {
       const paused = marqueeGallery.classList.toggle('is-paused');
       marqueeToggle.textContent = paused ? 'Reprendre le défilement' : 'Mettre en pause';

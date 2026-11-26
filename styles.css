@@ -2065,3 +2065,26 @@ p {
   color: var(--ink-body);
   line-height: 1.65;
 }
+
+/* =========================================================
+   PHOTO & MARQUEE COMPOSITING STABILITY
+   ========================================================= */
+picture {
+  display: contents;
+}
+
+.gallery-item {
+  background: var(--bg-soft);
+}
+
+.marquee-track {
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.hero-triptych-item img,
+.gallery-item img,
+.portrait-frame img {
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
