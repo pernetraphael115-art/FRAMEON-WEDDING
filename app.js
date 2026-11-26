@@ -244,10 +244,22 @@
       updateQuoteSummary();
     };
     card.addEventListener('click', (e) => {
-      if (e.target.closest('button') !== btn) selectCard();
+      if (e.target.closest('button') !== btn && !e.target.closest('details')) selectCard();
     });
     btn?.addEventListener('click', selectCard);
   });
+
+  const offerDetails = [...document.querySelectorAll('.offer-details')];
+  if (offerDetails.length) {
+    const desktopOffersQuery = window.matchMedia('(min-width: 720px)');
+    const syncOfferDetails = (isDesktop) => {
+      offerDetails.forEach((detail) => {
+        detail.open = isDesktop;
+      });
+    };
+    syncOfferDetails(desktopOffersQuery.matches);
+    desktopOffersQuery.addEventListener('change', (e) => syncOfferDetails(e.matches));
+  }
 
   addonCheckboxes.forEach((cb) => cb.addEventListener('change', updateQuoteSummary));
 
