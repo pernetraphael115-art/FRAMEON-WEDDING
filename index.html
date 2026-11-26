@@ -157,7 +157,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500&family=Fraunces:ital,opsz,wght@0,9..144,300..400;1,9..144,300..400&family=Raleway:wght@300;400;500;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css?v=20261126-2">
+  <link rel="stylesheet" href="styles.css?v=20261126-3">
 </head>
 <body>
   <a href="#main-content" class="skip-link">Aller au contenu principal</a>
@@ -229,7 +229,7 @@
               alt="Échange des alliances lors du mariage"
               width="1600"
               height="818"
-              fetchpriority="high"
+              decoding="async"
             >
           </picture>
         </div>
@@ -241,7 +241,7 @@
               alt="Couple de mariés allongés dans un champ de blé"
               width="1600"
               height="837"
-              decoding="async"
+              fetchpriority="high"
             >
           </picture>
         </div>
@@ -253,11 +253,24 @@
               alt="Baiser des mariés sous l'arche fleurie"
               width="1600"
               height="827"
-              fetchpriority="low" decoding="async"
+              decoding="async"
             >
           </picture>
         </div>
       </div>
+      <script>
+        (() => {
+          const t = document.querySelector('.hero-triptych');
+          if (!t || window.innerWidth >= 720) return;
+          const m = t.children[1];
+          if (!m) return;
+          t.style.scrollSnapType = 'none';
+          t.scrollLeft = Math.max(0, m.offsetLeft - (t.clientWidth - m.offsetWidth) / 2);
+          requestAnimationFrame(() => {
+            t.style.scrollSnapType = '';
+          });
+        })();
+      </script>
 
       <div class="hero-tagline-row">
         <p class="hero-tagline">Une interpretation cinématique, dynamique et moderne de votre amour</p>
@@ -1003,6 +1016,6 @@
     </div>
   </footer>
 
-  <script src="app.js?v=20261126-2" defer></script>
+  <script src="app.js?v=20261126-3" defer></script>
 </body>
 </html>

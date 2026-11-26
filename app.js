@@ -66,6 +66,43 @@
   });
 
   /* ------------------------------------------------------------------------
+     2c. Hero Triptych Mobile Centering (focus on middle photo at arrival)
+     ------------------------------------------------------------------------ */
+  const heroTriptych = document.querySelector('.hero-triptych');
+  if (heroTriptych) {
+    let heroTouched = false;
+    const markHeroTouched = () => {
+      heroTouched = true;
+    };
+    heroTriptych.addEventListener('pointerdown', markHeroTouched, { passive: true, once: true });
+    heroTriptych.addEventListener('touchstart', markHeroTouched, { passive: true, once: true });
+    heroTriptych.addEventListener('wheel', markHeroTouched, { passive: true, once: true });
+
+    const centerHeroTriptych = () => {
+      if (heroTouched || window.innerWidth >= 720) return;
+      const mid = heroTriptych.children[1];
+      if (!mid || heroTriptych.clientWidth === 0) return;
+      heroTriptych.style.scrollSnapType = 'none';
+      heroTriptych.scrollLeft = Math.max(
+        0,
+        mid.offsetLeft - (heroTriptych.clientWidth - mid.offsetWidth) / 2
+      );
+      requestAnimationFrame(() => {
+        heroTriptych.style.scrollSnapType = '';
+      });
+    };
+
+    centerHeroTriptych();
+    window.addEventListener('pageshow', centerHeroTriptych, { passive: true });
+    window.matchMedia('(max-width: 719px)').addEventListener('change', (e) => {
+      if (e.matches) {
+        heroTouched = false;
+        centerHeroTriptych();
+      }
+    });
+  }
+
+  /* ------------------------------------------------------------------------
      3. Marquee Gallery & Lightbox (<dialog>)
      ------------------------------------------------------------------------ */
   const marqueeGallery = document.getElementById('marquee-gallery');

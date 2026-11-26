@@ -451,6 +451,7 @@ p {
   gap: 6px;
   inline-size: 100%;
   overflow-x: auto;
+  overscroll-behavior-x: contain;
   scroll-snap-type: x mandatory;
   scrollbar-width: none;
   margin-block: 1.5rem 2rem;
